@@ -8,6 +8,7 @@ const Blog=require("./models/blog")
 const PORT = 3000;
 const cookieParser=require("cookie-parser");
 const { checkForAuthenticationCookie } = require("./middlewares/authentication");
+const User = require("./models/user");
 
 mongoose
   .connect("mongodb://localhost:27017/blogify")
